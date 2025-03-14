@@ -86,7 +86,6 @@ router.put("/:id", async (request, response) => {
     if (
       !request.body.name ||
       !request.body.priceInCents ||
-      !request.body.image ||
       !request.body.description ||
       !request.body.category
     ) {

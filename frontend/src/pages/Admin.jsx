@@ -59,16 +59,16 @@ const Admin = () => {
                 <td>{product.priceInCents}</td>
                 <td>{product.description}</td>
                 <td>{product.category}</td>
-                <td>
+                <td className="space-x-2">
                   <Link
                     to={`/admin/product/edit/${product._id}`}
-                    className="btn bg-orange-500"
+                    className="btn btn-sm btn-outline btn-warning"
                   >
                     Edit
                   </Link>
                   <Link
                     to={`/admin/product/delete/${product._id}`}
-                    className="btn bg-red-500"
+                    className="btn btn-sm btn-outline btn-error"
                   >
                     Delete
                   </Link>
